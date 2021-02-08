@@ -11,8 +11,8 @@ body {
 .navigation {
     width: 100% - var(--pad);
     height: auto;
-    min-height: 5vh;
-    max-height: 50px;
+    min-height: 2vh;
+    max-height: 40px;
 
     padding: var(--pad);
     margin: var(--margin);
