@@ -6,6 +6,8 @@ body {
     background-color: grey;
     font-family: Tahoma, sans-serif;
     padding: var(--pad);
+    max-width: 900px;
+    margin: auto;
 }
 
 .navigation {
@@ -37,13 +39,30 @@ body {
 
 
 .content {
+    position: relative;
+
     width: 100% - var(--pad);
     height: auto;
+    min-height: 500px;
 
-    margin-bottom: var(--pad);
     padding: var(--pad);
 
+    margin: auto;
+    margin-bottom: var(--pad);
+    
     background-color: white;
 
 }
 
+.text-container {
+    padding: var(--pad);
+}
+
+.text-container h1 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    margin: 0;
+}
