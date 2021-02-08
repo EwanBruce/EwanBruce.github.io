@@ -1,11 +1,11 @@
+:root {
+    --pad: 10px;
+}
+
 body {
     background-color: grey;
     font-family: Tahoma, sans-serif;
-}
-
-:root {
-    --margin: 10px;
-    --pad: 20px;
+    padding: var(--pad);
 }
 
 .navigation {
@@ -14,8 +14,8 @@ body {
     min-height: 2vh;
     max-height: 40px;
 
+    margin-bottom: var(--pad);
     padding: var(--pad);
-    margin: var(--margin);
 
     background-color: white;
 }
@@ -25,7 +25,6 @@ body {
     height: auto;
 
     padding: var(--pad);
-    margin: var(--margin);
 
     background-color: white;
 
@@ -41,8 +40,8 @@ body {
     width: 100% - var(--pad);
     height: auto;
 
+    margin-bottom: var(--pad);
     padding: var(--pad);
-    margin: var(--margin);
 
     background-color: white;
 
