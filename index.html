@@ -1,23 +1,65 @@
-<!doctype html>
-<html>
+<html lang="en">
     <head>
-        <title>Minimal Bootflat example</title>
-        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://bootflat.github.io/bootflat/css/bootflat.css">
+        <style>
+        body {
+            background-color: grey;
+        }
+
+        #main {
+            width: auto;
+            box-sizing: border-box;
+            margin: 20px;
+            background-color: white;
+            padding: 20px;
+        }
+        #textbox {
+            width: auto;
+            height: 100px;
+        }
+
+        #menu {
+            width: auto;
+            height: 50px;
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #menu-img {
+            width: 20%;
+            height: 100%;
+        }
+        #menu-itembar {
+            width: 80%;
+        }
+        #menu-option {
+            width: auto;
+            height: 100%;
+        }
+        </style>
+        
+        
     </head>
-
+    <!-- BEGIN BODY -->
     <body>
-        <h1>Test bootflat</h1>
-        <a class="btn btn-primary">Flat button</a>
+    
+    <!-- NAVBAR -->
+        <div id="menu">
 
-        <!-- Bootstrap -->
-        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+            <div id="menu-img"></div>
+            <div id="menu-itembar">
+                <div id="menu-option"></div>
+                <div id="menu-option"></div>
+                <div id="menu-option"></div>
+            </div>
 
-        <!-- Bootflat's JS files.-->
-        <script src="https://bootflat.github.io/bootflat/js/icheck.min.js"></script>
-        <script src="https://bootflat.github.io/bootflat/js/jquery.fs.selecter.min.js"></script>
-        <script src="https://bootflat.github.io/bootflat/js/jquery.fs.stepper.min.js"></script>
+        </div>
+        <div id="main">
+            <div id="textbox">
+                <h1>Welcome</h1>
+                <a>This page is currently a work in progress.</a>
+            </div>  
+        </div>
 
     </body>
 </html>
