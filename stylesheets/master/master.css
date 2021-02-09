@@ -5,8 +5,8 @@
 body {
     background-color: grey;
     font-family: Tahoma, sans-serif;
-    padding: var(--pad);
-    max-width: 900px;
+    /*padding: var(--pad);*/
+    max-width: 1000px;
     margin: auto;
 }
 

@@ -1,8 +1,8 @@
 .foot {
-    width: 100% - var(--pad);
+    width: 100% - 20px;
     height: auto;
 
-    padding: var(--pad);
+    padding: 10px;
 
     background-color: #333;
 
