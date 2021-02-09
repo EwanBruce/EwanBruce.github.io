@@ -31,8 +31,9 @@ body {
 
 .container h1 {
     margin: 0px;
+    margin-bottom: 15px;
 }
 
 .container p {
-    
+    margin: 0px;
 }
