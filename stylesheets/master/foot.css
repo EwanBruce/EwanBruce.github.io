@@ -1,8 +1,12 @@
-.foot {
-    width: 100% - 20px;
-    height: auto;
+:root {
+    --ext_pad: 20px;
+}
 
-    padding: 10px;
+.foot {
+    width: 100% - var(--ext_pad);
+    padding: var(--ext_pad);
+
+    height: auto;
 
     background-color: #333;
 
@@ -27,5 +31,5 @@
 }
 
 .foot-contact {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }

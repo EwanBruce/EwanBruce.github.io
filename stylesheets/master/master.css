@@ -1,11 +1,10 @@
 :root {
-    --pad: 10px;
+    --ext_pad: 20px;
 }
 
 body {
     background-color: grey;
     font-family: Tahoma, sans-serif;
-    /*padding: var(--pad);*/
     max-width: 1000px;
     margin: auto;
 }
@@ -13,27 +12,27 @@ body {
 .content {
     position: relative;
 
-    width: 100% - var(--pad);
+    width: 100% - var(--ext_pad);
+    padding-left: var(--ext_pad);
+    padding-right: var(--ext_pad);
+    padding-top: 0px;
+    padding-bottom: 0px;
+
     height: auto;
-    /*min-height: 500px;*/
-
-    padding: var(--pad);
-
-    margin: auto;
     
     background-color: white;
 
 }
 
-.text-container {
-    padding: var(--pad);
+.container {
+    padding-top: var(--ext_pad);
+    padding-bottom: var(--ext_pad);
 }
 
-.text-container h1 {
-    margin: 0;
-    margin-bottom: 10px;
+.container h1 {
+    margin: 0px;
 }
 
-.text-container p {
-    margin: 0;
+.container p {
+    
 }
