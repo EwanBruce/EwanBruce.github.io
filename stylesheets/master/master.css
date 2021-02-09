@@ -4,14 +4,12 @@
 
 body {
     background-color: grey;
-    font-family: Tahoma, sans-serif;
+    font-family:Arial, Helvetica, sans-serif
     max-width: 1000px;
     margin: auto;
 }
 
 .content {
-    position: relative;
-
     width: 100% - var(--ext_pad);
     padding-left: var(--ext_pad);
     padding-right: var(--ext_pad);
