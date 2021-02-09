@@ -4,6 +4,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
         <link rel="stylesheet" type="text/css" href="stylesheets/master/master.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/master/nav.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/master/foot.css">
+
         <link rel="stylesheet" type="text/css" href="stylesheets/index/index.css">
         
     </head>
@@ -12,24 +15,15 @@
 
         <div class="header">
 
-            <div class="navigation">
-
-                <div class="nav-img"><a style="color: red;">Logo Here</a></div>
-                <div class="nav-options">
-
-                    <div class="nav-link">
-                        <a href="index.html">Home</a>
-                    </div>
-                    <div class="nav-link">
-                        <a href="about.html">About</a>
-                    </div>
-                    <div class="nav-link">
-                        <a href="contact.html">Contact</a>
-                    </div>
-
-                </div>
-
-            </div>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <img class="menu_icon" src="resources/master/nav/menubars_white.png">
+            </a>
+          </div>
 
         </div>
         <div class="content">
@@ -48,5 +42,10 @@
             <div class="foot-copyright"><a>Copyright &#169; Ewan Bruce - 2020</a></div>
 
         </div>
+    
+    <!-- SCRIPTS -->
+    
+    <script src="scripts/master/nav.js"></script>
+
     </body>
 </html>

@@ -10,76 +10,6 @@ body {
     margin: auto;
 }
 
-.navigation {
-    width: 100% - var(--pad);
-    height: 100%;
-    min-height: 2vh;
-    max-height: 40px;
-
-    margin-bottom: var(--pad);
-    padding: 10px;
-
-    background-color: white;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
-}
-
-.nav-img {
-    height: 100%;
-    min-width: 20%;
-
-    align-content: center;
-
-    margin-left: 0;
-
-    vertical-align: middle;
-
-    border: 2px;
-    border-color: black;
-    border-style: dashed;
-}
-
-.nav-options {
-    height: 100%;
-    min-width: 50%;
-
-    margin-right: auto;
-
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.nav-link {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    padding: 0 5%;
-}
-
-
-.foot {
-    width: 100% - var(--pad);
-    height: auto;
-
-    padding: var(--pad);
-
-    background-color: white;
-
-    font-size: 14;
-}
-
-.foot-contact {
-    margin-bottom: 10px;
-}
-
-
 .content {
     position: relative;
 
@@ -90,7 +20,6 @@ body {
     padding: var(--pad);
 
     margin: auto;
-    margin-bottom: var(--pad);
     
     background-color: white;
 
