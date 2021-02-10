@@ -46,7 +46,6 @@ body {
 
     font-family: Arial, Helvetica, sans-serif;
 
-    text-align: center;
     justify-content: center;
     align-content: center;
 }
@@ -84,6 +83,7 @@ body {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
 
     display: flex;
     justify-content: space-between;
@@ -94,7 +94,6 @@ body {
     padding: 20px;
     padding-left: auto;
     padding-right: auto;
-    padding-top: 25px;
     margin: auto;
 
     color: whitesmoke;
@@ -103,9 +102,8 @@ body {
 
     font-family: Arial, Helvetica, sans-serif;
 
-    text-align: center;
-
-    display: inline-block;  
+    justify-content: center;
+    align-content: center;
 }
 
 
