@@ -96,15 +96,13 @@ body {
 @media screen and (max-width: 700px) {
     .nav {
         display: contents;
+        width: 100%;
     }
     .nav a {
-        float: none;
         display: block;
         width: 100%;
-        text-align: left;
-    }
-    .footer-wrapper {
-        padding: 10px;
+        padding-left: 0;
+        padding-right: 0;
     }
     .footer {
         display: contents;
@@ -115,7 +113,7 @@ body {
         width: 100%;
         text-align: center;
 
-        padding: 0px;
+        padding: 10px;
 
         line-height: 30px;
     }
