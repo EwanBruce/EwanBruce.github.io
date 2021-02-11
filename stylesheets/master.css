@@ -5,49 +5,41 @@ body {
 }
 
 .header-wrapper {
-    position: relative;
-    top: 0;
-
     width: 100%;
-    min-height: 5%;
 
     background-color: #333;
 }
 
 .header {
     height: auto;
-
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
+
+    margin: auto;
 }
 
 .nav {
-    height: auto;
     width: 100%;
-    padding: 0;
     display: flex;
-
-    justify-content: space-between;
-
-    text-align: center;
-    align-content: center;
-
 }
 
 .nav a {
-    height: 20px;
+    width: 25%;
     padding: 20px;
-    padding-left: auto;
-    padding-right: auto;
-    margin: auto;
 
     color: whitesmoke;
-
     text-decoration: none;
 
-    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.nav a.active {
+    background-color: rgb(100, 200, 200);
+    color: #333;
+}
+
+.nav a:hover {
+    background-color: rgb(100, 200, 200);
+    color: #333;
 }
 
 
@@ -73,7 +65,7 @@ body {
     position: absolute;
     bottom: 0;
 
-    width:100%;
+    width: 100%;
     min-height: 5%;
 
     background-color: #333;
@@ -83,35 +75,48 @@ body {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0px;
-
+    width: 100%;
     display: flex;
-    justify-content: space-between;
 
-    text-align: center;
-    align-content: center;
+    justify-content: space-around;
 }
 
 .footer a {
-    height: 20px;
+    width: 50%;
     padding: 20px;
-    padding-left: auto;
-    padding-right: auto;
-    margin: auto;
 
     color: whitesmoke;
-
     text-decoration: none;
+    font-size: 14px;
 
-    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
+    .nav {
+        display: contents;
+    }
     .nav a {
-        font-size: 14px;
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    .footer-wrapper {
+        padding: 10px;
+    }
+    .footer {
+        display: contents;
     }
     .footer a {
-        font-size: 14px;
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        padding: 0px;
+
+        line-height: 30px;
     }
   }
