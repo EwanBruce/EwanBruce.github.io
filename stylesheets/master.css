@@ -107,12 +107,12 @@ body {
         display: contents;
     }
     .footer a {
-        float: none;
         display: block;
-        width: 100%;
+        width: 80%;
         text-align: center;
 
         padding: 10px;
+        margin: auto;
 
         line-height: 30px;
     }
