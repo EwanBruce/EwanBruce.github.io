@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    padding: 0;
+    width: 100vw;
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -50,15 +52,12 @@ body {
 }
 
 .content {
-
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
 
     height:auto;
 
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .footer-wrapper {
