@@ -3,6 +3,6 @@ function togglediv(id) {
     var w = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
     var targetWidth = 700;
     if (w <= targetWidth) {     
-    div.style.display = div.style.display == "none" ? "contents" : "none";
+    div.style.display = div.style.display == "none" ? "" : "none";
     }
 }
