@@ -195,8 +195,8 @@ body {
 
 
 @media screen and (max-width: 1000px) {
-.content-wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
+    .content-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
