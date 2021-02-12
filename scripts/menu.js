@@ -5,7 +5,4 @@ function togglediv(id) {
     if (w <= targetWidth) {     
     div.style.display = div.style.display == "none" ? "contents" : "none";
     }
-    else {
-    div.style.display = "inline-flex";
-    }
 }
