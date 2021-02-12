@@ -20,10 +20,17 @@
             <div class="header">
         
                 <div class="nav" id="nav">
-                    <a href="index.html">HOME</a>
-                    <a href="about.html">ABOUT ME</a>
-                    <a class="active" href="work.html">MY WORK</a>
-                    <a href="contact.html">CONTACT ME</a>
+                    <div class="active-link">
+                        <a id="active" onclick="togglenav()" class="active" href="#">MY WORK</a>
+                        <div class="menu-icon">
+                            <a onclick="togglenav()" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="inactive-links" id="inactive-links">
+                        <a id="inactive" href="index.html">HOME</a>
+                        <a id="inactive" href="about.html">ABOUT ME</a>
+                        <a id="inactive" href="contact.html">CONTACT ME</a>
+                    </div>
                 </div>
         
             </div>
