@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -44,7 +44,7 @@ body {
 .active-link a {
     width: 100%;
     padding: 20px;
-    overflow: ;
+ 
 }
 
 .inactive-links {
@@ -114,9 +114,11 @@ body {
     margin-right: auto;
 }
 
+.content p {
+    text-align: justify;
+}
+
 .footer-wrapper {
-    position: absolute;
-    bottom: 0;
 
     width: 100%;
     min-height: 5%;
@@ -147,6 +149,7 @@ body {
 
 
 @media screen and (max-width: 600px) {
+
     .nav {
         display: block;
         width: 100%;
@@ -155,7 +158,7 @@ body {
     .nav a {
         height: 20px;
         display: block;
-        width: 100%;
+        width: auto;
         padding-left: 20px;
         padding-right: 0;
 
@@ -201,7 +204,7 @@ body {
 
 
 @media screen and (max-width: 1000px) {
-    .content-wrapper {
+    .content {
         padding-left: 20px;
         padding-right: 20px;
     }
