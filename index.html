@@ -10,6 +10,11 @@
 
         <!--STYLESHEETS-->
         <link rel="stylesheet" type="text/CSS" href="stylesheets/master.css">
+    
+        <!--SCRIPTS-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="scripts/menu.js"></script>
+
     </head>
     <!--BODY-->
     <body>
@@ -18,11 +23,15 @@
         <div class="header-wrapper">
             <div class="header">
         
-                <div class="nav">
-                    <a class="active" href="index.html">HOME</a>
-                    <a href="about.html">ABOUT ME</a>
-                    <a href="work.html">MY WORK</a>
-                    <a href="contact.html">CONTACT ME</a>
+                <div class="nav" id="nav">
+                    <div class="active-link">
+                        <a id="active" onclick="togglediv('inactive-links')" class="active" href="#">HOME</a>
+                    </div>
+                    <div class="inactive-links" id="inactive-links">
+                        <a id="inactive" href="about.html">ABOUT ME</a>
+                        <a id="inactive" href="work.html">MY WORK</a>
+                        <a id="inactive" href="contact.html">CONTACT ME</a>
+                    </div>
                 </div>
         
             </div>

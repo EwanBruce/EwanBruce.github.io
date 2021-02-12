@@ -21,17 +21,36 @@ body {
 
 .nav {
     width: 100%;
-    display: flex;
+    display: inline-flex;
 }
 
 .nav a {
-    width: 25%;
-    padding: 20px;
-
     color: whitesmoke;
     text-decoration: none;
 
     text-align: center;
+
+    display: inline-block;
+}
+
+.active-link {
+    width: 25%;
+    display: inline-flex;
+}
+
+.active-link a {
+    width: 100%;
+    padding: 20px;
+}
+
+.inactive-links {
+    width: 75%;
+    display: inline-flex;
+}
+
+.inactive-links a {
+    width: 33.333%;
+    padding: 20px;
 }
 
 .nav a.active {
@@ -93,8 +112,9 @@ body {
 
 @media screen and (max-width: 700px) {
     .nav {
-        display: contents;
+        display: block;
         width: 100%;
+        height: auto;
     }
     .nav a {
         display: block;
@@ -102,6 +122,20 @@ body {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .active-link {
+        width: 100%;
+    }
+
+    .inactive-links{
+        width: 100%;
+        display: contents;
+    }
+
+    .inactive-links a {
+        width: 100%;
+    }
+
     .footer {
         display: contents;
     }
