@@ -1,2 +1,2 @@
-var ore = JSON.parse(URL('https://secure.runescape.com/m=itemdb_rs/api/catalogue/detail.json?item=440'));
+var ore = JSON.parse(data);
 document.getElementById('price').innerHTML = `PRICE: ${ore.item.current.price}`;
