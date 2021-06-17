@@ -24,12 +24,14 @@ for item_id in id_list:
 
     name = "\'" + "item" + str(i) + "\': "
     itemdb += (name + str({
-        'id': item_id,
-        'name': item_data['item']['name'],
-        'price': item_data['item']['current']['price'],
-        'icon': item_data['item']['icon']
+        'id': item_id, 
+        'name': item_data['item']['name'], 
+        'price': item_data['item']['current']['price'], 
+        'icon': item_data['item']['icon'] 
     }
-    ) + ",")
+    ))
+    if (i!=num_items):
+        itemdb += ', '
 
 itemdb = '{' + itemdb + '}'
 print(itemdb)
