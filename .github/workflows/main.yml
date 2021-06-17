@@ -17,7 +17,7 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.9.5' # install the python version needed
+          python-version: '3.x' # install the python version needed
           
       - name: install python packages
         run: |
@@ -29,7 +29,7 @@ jobs:
           EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
-        run: python 'rs3/updatedb.py'
+        run: python updatedb.py
           
       - name: commit files
         run: |
