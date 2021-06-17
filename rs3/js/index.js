@@ -18,4 +18,4 @@ function readJson () {
 
 var items = response.json;
 
-console.log(items);
+console.log(items.item1.price);
