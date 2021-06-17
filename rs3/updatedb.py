@@ -33,6 +33,7 @@ for item_id in id_list:
     if (i!=num_items):
         itemdb += ', '
 
+itemdb = " \"num_items\": " + str(num_items)  + ", " + itemdb
 itemdb = '{' + itemdb + '}'
 print(itemdb)
 

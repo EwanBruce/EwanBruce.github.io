@@ -22,4 +22,13 @@ postData('./itemdb.json', { answer: 42 })
   .then(data => {
     console.log(data); // JSON data parsed by `data.json()` call
     document.getElementById("price").innerHTML = data.item1.price;
+    populategrid();
   });
+
+function pupulategrid() {
+  const boxwidth = 300;
+  const boxheight = 500;
+
+  const maxwidth = window.width;
+
+}
