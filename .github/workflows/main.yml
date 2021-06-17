@@ -29,8 +29,8 @@ jobs:
           EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
+        working-directory: rs3
         run: |
-          working-directory: rs3
           python updatedb.py
           
       - name: commit files
