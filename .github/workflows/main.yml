@@ -30,7 +30,7 @@ jobs:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
         run: |
-          cd rs3
+          working-directory: rs3
           python updatedb.py
           
       - name: commit files
