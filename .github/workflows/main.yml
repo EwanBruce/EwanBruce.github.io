@@ -4,7 +4,7 @@ name: CI
 
 on:
   schedule:
-    - cron: '0 0-23 * * *' # runs every hour
+    - cron: '35 0-23 * * *' # runs every hour
 
 jobs:
   build:
