@@ -1,8 +1,21 @@
-const xmlhttp = new XMLHttpRequest();
-xmlhttp.onload = function() {
-  const itemdata = JSON.parse(this.responseText);
-  document.getElementById("price").innerHTML = itemdata.item.current.price;
+function readJson () {
+  // http://localhost:8080
+  fetch('./itemdb.json')
+  .then(response => {
+      if (!response.ok) {
+          throw new Error("HTTP error " + response.status);
+      }
+      return response.json();
+  })
+  .then(json => {
+      this.users = json;
+      //console.log(this.users);
+  })
+  .catch(function () {
+      this.dataError = true;
+  })
 }
-xmlhttp.open("POST", "https://secure.runescape.com/m=itemdb_rs/api/catalogue/detail.json?item=440");
-xmlhttp.withCredentials = true;
-xmlhttp.send();
+
+var items = readJson();
+
+console.log(items);

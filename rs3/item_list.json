@@ -1,0 +1,16 @@
+{
+    "items": [
+        {
+        "name": "Iron Bar",
+        "id": 2351
+        },
+        {
+        "name": "Iron Ore",
+        "id": 440
+        },
+        {
+        "name": "Egg",
+        "id": 1944
+        }
+    ]
+}
