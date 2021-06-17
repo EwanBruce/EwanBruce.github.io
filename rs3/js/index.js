@@ -16,6 +16,6 @@ function readJson () {
   })
 }
 
-var items = readJson();
+var items = response.json;
 
 console.log(items);
