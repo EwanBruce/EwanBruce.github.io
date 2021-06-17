@@ -21,6 +21,5 @@ async function postData(url = './itemdb.json', data = {}) {
 postData('./itemdb.json', { answer: 42 })
   .then(data => {
     console.log(data); // JSON data parsed by `data.json()` call
+    document.getElementById("price").innerHTML = data.item1.price;
   });
-
-  document.getElementById("price").innerHTML = data.item1.price;
