@@ -16,6 +16,6 @@ function readJson () {
   })
 }
 
-var items = response.json;
+var items = readJson();
 
 console.log(items.item1.price);
