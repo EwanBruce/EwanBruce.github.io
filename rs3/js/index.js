@@ -1,3 +1,4 @@
+var data
 // Example POST method implementation:
 async function postData(url = './itemdb.json', data = {}) {
   // Default options are marked with *
@@ -12,7 +13,7 @@ async function postData(url = './itemdb.json', data = {}) {
     },
     redirect: 'follow', // manual, *follow, error
     referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-    body: JSON.stringify(data) // body data type must match "Content-Type" header
+    //body: JSON.stringify(data) // body data type must match "Content-Type" header
   });
   return response.json(); // parses JSON response into native JavaScript objects
 }
@@ -21,3 +22,5 @@ postData('./itemdb.json', { answer: 42 })
   .then(data => {
     console.log(data); // JSON data parsed by `data.json()` call
   });
+
+  document.getElementById("price").innerHTML = data.item1.price;
