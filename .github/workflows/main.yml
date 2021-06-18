@@ -25,11 +25,11 @@ jobs:
           pip install requests
           
       - name: execute py script # run sj-gobierno.py to get the latest data
+        uses: ./
         env: 
           EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
-        working-directory: rs3
         run: python rs3/updatedb.py
           
       - name: commit files
