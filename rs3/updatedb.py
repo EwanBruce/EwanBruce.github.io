@@ -3,7 +3,7 @@ import json
 
 #import list of item ids from item_list.json
 
-id_list = [440, 2351, 1944]
+id_list = [440, 2351, 44646, 1944]
 
 #print(item_list)
 
@@ -36,9 +36,6 @@ for item_id in id_list:
 itemdb = " \"num_items\": " + str(num_items)  + ", " + itemdb
 itemdb = '{' + itemdb + '}'
 print(itemdb)
-
-#with open("itemdb.json", "w") as outfile:
-    #json.dump(itemdb, outfile)
 
 f = open("itemdb.json", "w")
 f.write(itemdb.replace("\'", "\""))

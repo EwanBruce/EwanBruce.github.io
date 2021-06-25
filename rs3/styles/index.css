@@ -1,3 +1,26 @@
-div {
-    height: 30px;
+.item {
+    min-height: 50px;
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*border-style: solid;
+    border-color: black;*/
+}
+
+.tableitem {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+
+    /*padding-left: 10px;
+    padding-right: 10px;*/
+}
+
+.tableitem span {
+    text-align: center;
 }

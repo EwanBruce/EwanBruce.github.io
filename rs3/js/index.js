@@ -21,14 +21,30 @@ async function postData(url = './itemdb.json', data = {}) {
 postData('./itemdb.json', { answer: 42 })
   .then(data => {
     console.log(data); // JSON data parsed by `data.json()` call
-    document.getElementById("price").innerHTML = data.item1.price;
-    populategrid();
+    const boxwidth = 300;
+    const boxheight = 500;
+
+    const maxwidth = window.width;
+
+    let itemnum;
+    let gridhtml = `
+      <div class="item">
+        <div class="tableitem itemname"><span style="font-weight: bold">NAME</span></div>
+        <div class="tableitem itemid"><span style="font-weight: bold">ITEM ID</span></div>
+        <div class="tableitem itemimg"><span style="font-weight: bold">ICON</span></div>
+        <div class="tableitem itemprice"><span style="font-weight: bold">PRICE</span></div>
+      </div>`;
+    for (let i = 1; i <= data.num_items; i++) {
+      itemnum = `item${i}`;
+      gridhtml += `
+        <div class="item">
+          <div class="tableitem itemname"><span>${data[itemnum].name}</span></div>
+          <div class="tableitem itemid"><span>${data[itemnum].id}</span></div>
+          <div class="tableitem itemimg"><img src="${data[itemnum].icon}"></div>
+          <div class="tableitem itemprice"><span>${data[itemnum].price}</span></div>
+        </div>`
+    }
+
+    console.log(gridhtml)
+    document.getElementById("gridcontainer").innerHTML = gridhtml;
   });
-
-function pupulategrid() {
-  const boxwidth = 300;
-  const boxheight = 500;
-
-  const maxwidth = window.width;
-
-}
