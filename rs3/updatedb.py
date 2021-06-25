@@ -27,7 +27,7 @@ for item_id in id_list:
         'id': item_id, 
         'name': item_data['item']['name'], 
         'price': item_data['item']['current']['price'], 
-        'icon': item_data['item']['icon'] 
+        'icon': item_data['item']['icon_large'] 
     }
     ))
     if (i!=num_items):
