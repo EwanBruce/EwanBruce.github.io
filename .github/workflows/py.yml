@@ -4,7 +4,7 @@ name: CI
 
 on:
   schedule:
-    - cron: '20 0-23 * * *' # runs every hour
+    - cron: '* 0-23 * * *' # runs every hour
 
 jobs:
   build:
@@ -29,7 +29,8 @@ jobs:
           EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
-        run: python ~/rs3/updatedb.py
+        run: |
+          python ~/rs3/updatedb.py
           
       - name: commit files
         run: |
