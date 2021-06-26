@@ -30,7 +30,7 @@ postData('./itemdb.json', { answer: 42 })
     let gridhtml = `
       <div class="item">
         <div class="tableitem itemname"><span style="font-weight: bold">NAME</span></div>
-        <div class="tableitem itemid"><span style="font-weight: bold">ITEM ID</span></div>
+        <div class="tableitem itemid"><span style="font-weight: bold">ID</span></div>
         <div class="tableitem itemimg"><span style="font-weight: bold">ICON</span></div>
         <div class="tableitem itemprice"><span style="font-weight: bold">PRICE</span></div>
       </div>`;
