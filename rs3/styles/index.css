@@ -26,7 +26,7 @@
 }
 
 .tableitem img {
-    height: 50px;
+    width: 50px;
 }
 
 .itemname {
@@ -45,10 +45,30 @@
     min-width: 75px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
 
     .item {
         width: 100%;
+    }
+
+    .tableitem img {
+        width: 50px;
+    }
+    
+    .itemname {
+        width: calc(100vw - (75px + 50px + 5px));
+    }
+    
+    .itemid {
+        min-width: 75px;
+    }
+    
+    .itemimg {
+        width: 50px;
+    }
+    
+    .itemprice {
+        width: 75px;
     }
 
   }
