@@ -1,5 +1,6 @@
 import requests
 import json
+import time
 
 #import list of item ids from item_list.json
 
@@ -33,9 +34,16 @@ for item_id in id_list:
     if (i!=num_items):
         itemdb += ', '
 
-itemdb = " \"num_items\": " + str(num_items)  + ", " + itemdb
+seconds = time.time()
+date = time.ctime(seconds)
+
+itemdb = " \"date\": \"" + str(date) + "\"" + ", " + " \"num_items\": " + str(num_items)  + ", " + itemdb
 itemdb = '{' + itemdb + '}'
 print(itemdb)
+
+seconds = time.time()
+date = time.ctime(seconds)
+print(date)
 
 f = open("itemdb.json", "w")
 f.write(itemdb.replace("\'", "\""))

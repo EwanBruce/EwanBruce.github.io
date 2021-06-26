@@ -47,4 +47,6 @@ postData('./itemdb.json', { answer: 42 })
 
     console.log(gridhtml)
     document.getElementById("gridcontainer").innerHTML = gridhtml;
+
+    document.getElementById("lastupdate").innerHTML = data.date;
   });
